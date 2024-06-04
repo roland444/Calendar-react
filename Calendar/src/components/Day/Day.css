@@ -1,0 +1,10 @@
+.day-container {
+    border: 1px solid black;
+    padding: 15px;
+    
+}
+
+.current-day {
+    background-color: white;
+    color: black;
+}
