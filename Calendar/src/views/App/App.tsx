@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { Month } from '@/components/Month'
+import { Calendar } from '@/components/Calendar'
 
 // { 'dog': 'pies' }
 // 'dog' --> klucz, słowo kluczowe, które niesie za sobą pewną wartość
@@ -24,9 +25,12 @@ import { Month } from '@/components/Month'
 // keyof --> klucz pewnego typu
 // typeof --> typ pewnego obiektu (typeof DayOfWeek --> zamień ten obiekt na typ)
 
+// Zasada DRY - Don't Repeat Yourself !
+// const goToPreviousMonth = () => setDate(new Date(date.setMonth(month - 1)))
+// const goToNextMonth = () => setDate(new Date(date.setMonth(month + 1)))
+
 function App() {
-	const [count, setCount] = useState(0)
-	
+
 	return (
 		<>
 			{/* <span>Miesiąc={month}</span>
@@ -54,7 +58,8 @@ function App() {
 
 			{/* Zadanie: Rozpocznij miesiąc od właściwego miejsca (nd-sb) */}
 			{/* {new Date().getDay()}-{new Date().getDate()} */}
-			<Month />
+			{/* <Month date={new Date()} /> */}
+			<Calendar />
 		</>
 	)
 }

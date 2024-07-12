@@ -1,0 +1,47 @@
+.year-component-months {
+    display: grid;
+    justify-content: center;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.year-component-year {
+    display: flex;
+	justify-content: center;
+    align-items: center;
+	margin: 50px;
+	gap: 50px;
+}
+
+.year-btn {
+    height: 120px;
+}
+
+.year-link {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.monthsOfTheYear {
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.days-of-week-container-year-component {
+    margin: 10px;
+    width: 25px;
+}
+
+.days-container-year-component {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 1px;
+    font-size: 15px;
+}
+
+.day-container-year-component {
+    border: none;
+    padding: 5px;
+}
+

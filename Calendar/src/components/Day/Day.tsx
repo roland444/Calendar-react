@@ -1,11 +1,12 @@
 import './Day.css'
 
+
 export type DayProps = {
 	day: number
-};
+}
 
 const Day = ({ day }: DayProps) => {
-	return <div className={'day-container'}>{day}</div>
+	return <div className='day-container'>{day}</div>
 }
 
 export default Day

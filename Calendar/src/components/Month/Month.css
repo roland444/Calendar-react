@@ -1,0 +1,65 @@
+.month-container {
+	display: flex;
+}
+
+.weeks-container {
+	display: grid;
+	align-items: center;
+	margin-top: 72px;
+	text-align: center;
+}
+
+.week {
+	width: 65px;
+	height: 59px;
+}
+
+.week a {
+	font-weight: 700;
+	font-style: italic;
+	font-size: 20px;
+}
+
+.days-container {
+	display: grid;
+	height: 350px;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 1px;
+}
+
+.date-container {
+	gap: 1rem;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex: 1;
+	justify-content: center;
+}
+
+.days-of-week-container {
+	margin: 15px;
+	width: 35px;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+}
+
+.month-bar {
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+	gap: 50px;
+}
+
+.month-bar button {
+	height: 120px;
+}
+
+.none {
+	display: none;
+}

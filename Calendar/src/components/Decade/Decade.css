@@ -1,0 +1,28 @@
+.decade-component-years {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+    gap: 5rem;
+	grid-template-rows: auto;
+}
+
+.decade-component-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    gap: 50px;
+}
+
+.decade-bar-btn {
+    height: 120px;
+}
+
+.decade-component-bar a {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.year-of-decade {
+    font-size: 30px;
+    font-weight: 700;
+}
