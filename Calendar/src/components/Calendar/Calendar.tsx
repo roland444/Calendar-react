@@ -7,7 +7,7 @@ import { CalendarType, MonthsOfYear } from './calendar.const'
 
 const Calendar = () => {
 	const [date, setDate] = useState(new Date())
-	const [type, setType] = useState(CalendarType.Month)
+	const [type, setType] = useState(CalendarType.Week)
 	const testRef = useRef<HTMLDivElement | null>(null)
 
 	const month = useMemo(() => date.getMonth(), [date])
@@ -20,14 +20,14 @@ const Calendar = () => {
 	
 	const componentSwitch = () => {
 		switch (type) {
+			case CalendarType.Week:
+				return <Week onTypeChange={onTypeChange} />
 			case CalendarType.Month:
 				return <Month date={date} />
 			case CalendarType.Year:
 				return <Year onTypeChange={onTypeChange} />
 			case CalendarType.Decade:
-				return <Decade onTypeChange={onTypeChange}/>
-			case CalendarType.Week:
-				return <Week onTypeChange={onTypeChange}/>
+				return <Decade onTypeChange={onTypeChange} />
 			default:
 				return <></>
 		}

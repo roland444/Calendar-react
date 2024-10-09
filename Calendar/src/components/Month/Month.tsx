@@ -81,7 +81,7 @@ const Month = ({ date, onTypeChange }: MonthProps) => {
 					getWeekNumber(new Date(goToMonth(testDate, testDate.getMonth() + 1).setDate(0)))
 				).map((week, index) => (
 					<div className='week' key={index}>
-						<a href='#' onClick={() => onTypeChange(CalendarType.Week)}>
+						<a href='#' onClick={() => onTypeChange?.(CalendarType.Week)}>
 							{week}
 						</a>
 					</div>

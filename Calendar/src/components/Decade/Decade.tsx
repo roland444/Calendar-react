@@ -1,6 +1,6 @@
 import './Decade.css';
 import { useMemo, useState } from 'react'
-import { CalendarExternalProps } from '../Calendar/calendar.types'
+import type { CalendarExternalProps } from '../Calendar/calendar.types'
 import { CalendarType } from '../Calendar';
 
 export type DecadeProps = CalendarExternalProps
@@ -28,7 +28,6 @@ const Decade = ({ onTypeChange }: DecadeProps) => {
                 ))
                 }
             </div>
-            
         </>
     )
 }

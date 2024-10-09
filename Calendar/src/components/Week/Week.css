@@ -1,0 +1,23 @@
+.timer-bracket {
+}
+
+.timetable {
+	display: flex;
+	flex-direction: row;
+}
+
+.timetable-bracket {
+	border: 1px solid white;
+}
+
+.bracket {
+	border: 1px solid white;
+	padding: 10px 80px 10px 80px;
+}
+
+.week-container {
+	display: grid;
+	grid-template-columns: repeat(8, 10vw);
+	grid-template-rows: auto;
+	grid-template-areas: 'Hour Mon Tue Wed Thu Fri Sat Sun';
+}
